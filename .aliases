@@ -8,6 +8,5 @@ alias ..="cd .."
 # Git
 alias gs="git status"
 alias gb="git branch"
-alias gcb="git checkout -"
-alias gpod="git pull origin develop"
 alias glog="git log --pretty=short"
+alias ga="git add *"
