@@ -1,3 +1,3 @@
 #!/bin/sh
 
-diff .aliases ~/.aliases
+cp -r .aliases ~/.aliases
