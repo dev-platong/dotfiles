@@ -1,5 +1,12 @@
 alias ls="ls -G"
-alias ls="gls --color"
+
+OS=$(uname)
+
+if [ "$OS" == "Darwin" ]; then
+    alias ls="gls --color"
+else
+    alias ls="ls --color"
+fi
 alias l="ls"
 alias sl="ls"
 alias dc="cd"
@@ -9,4 +16,3 @@ alias ..="cd .."
 alias gs="git status"
 alias gb="git branch"
 alias glog="git log --pretty=short"
-alias ga="git add *"
